@@ -1,0 +1,35 @@
+{
+  "name": "realtime-voice-ai",
+  "version": "1.0.0",
+  "description": "Production-grade real-time voice AI server with streaming STT, LLM, and TTS",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@deepgram/sdk": "^3.9.0",
+    "@fastify/formbody": "^8.0.2",
+    "@fastify/websocket": "^11.0.1",
+    "@supabase/supabase-js": "^2.47.10",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.1.0",
+    "openai": "^4.76.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.9"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
